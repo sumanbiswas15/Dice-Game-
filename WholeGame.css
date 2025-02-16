@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #6cf4f4;  
+}
+.container {
+    max-width: 850px;
+    max-height: 500px;
+    margin: 0 auto;
+    padding: 66px;
+    background: rgb(230, 243, 93);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(26, 4, 4, 0.301);
+}
+.players {
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0; 
+}
+.player {
+    text-align: center; 
+}
+.dice {
+    font-size: 50px;
+    cursor: pointer;
+}
+button {
+   padding: 5px;
+
+}
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.dice {
+    font-size: 100px; 
+    cursor: pointer; 
+    transition: transform 0.5s; 
+}
+.roll {
+    animation: shake 0.5s; 
+}
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
